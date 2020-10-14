@@ -6,6 +6,10 @@ data:
       repos:
       - bwoodhouse322/sturdy-disco
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - bwoodhouse322/test-app-jenkinsx
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -37,6 +41,22 @@ data:
       - cat
       - dog
       - pony
+      bwoodhouse322/test-app-jenkinsx:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
     requiresig: {}
     sigmention: {}
     size:
@@ -49,6 +69,11 @@ data:
     - repos:
       - bwoodhouse322/sturdy-disco
       trusted_org: todo
+    - repos:
+      - bwoodhouse322/test-app-jenkinsx
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
