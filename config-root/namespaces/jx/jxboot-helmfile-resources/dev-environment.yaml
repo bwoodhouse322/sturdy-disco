@@ -40,6 +40,7 @@ spec:
         gitServer: https://github.com
         namespace: jx
         provider: minikube
+        registry: 10.97.87.3
       environments:
       - ingress:
           domain: ""
