@@ -17,6 +17,7 @@ cluster:
   gitServer: https://github.com
   namespace: jx
   provider: minikube
+  registry: 10.97.87.3
 environments:
 - ingress:
     domain: ""
@@ -27,6 +28,8 @@ environments:
       enabled: false
       production: false
   key: dev
+  owner: bwoodhouse322
+  repository: sturdy-disco
 - ingress:
     domain: ""
     externalDNS: false
@@ -55,6 +58,8 @@ ingress:
     enabled: false
     production: false
 kaniko: true
+pipelineUser:
+  username: bwoodhouse322
 repository: bucketrepo
 secretStorage: vault
 storage:
