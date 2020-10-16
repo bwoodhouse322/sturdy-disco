@@ -8,5 +8,6 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: another-jenkins-test
     - name: test-app-jenkinsx
     scheduler: in-repo
