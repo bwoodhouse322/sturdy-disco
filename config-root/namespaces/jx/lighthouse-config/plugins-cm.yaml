@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - bwoodhouse322/another-jenkins-test
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - bwoodhouse322/test-app-jenkinsx
       require_self_approval: true
     cat: {}
@@ -24,6 +28,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      bwoodhouse322/another-jenkins-test:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       bwoodhouse322/sturdy-disco:
       - config-updater
       - approve
@@ -68,6 +88,9 @@ data:
     triggers:
     - repos:
       - bwoodhouse322/sturdy-disco
+      trusted_org: todo
+    - repos:
+      - bwoodhouse322/another-jenkins-test
       trusted_org: todo
     - repos:
       - bwoodhouse322/test-app-jenkinsx

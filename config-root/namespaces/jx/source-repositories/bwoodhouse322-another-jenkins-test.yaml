@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: bwoodhouse322
+    provider: github
+    repository: another-jenkins-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: bwoodhouse322-another-jenkins-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/bwoodhouse322/another-jenkins-test.git
+  org: bwoodhouse322
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: another-jenkins-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/bwoodhouse322/another-jenkins-test
