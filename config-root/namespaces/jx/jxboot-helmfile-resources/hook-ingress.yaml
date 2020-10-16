@@ -16,4 +16,4 @@ spec:
               serviceName: hook
               servicePort: 80
             path: "/"
-      host: 6c2f0ef3fb8c.ngrok.io
+      host: 8db0df32eecd.ngrok.io
